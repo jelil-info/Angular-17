@@ -1,0 +1,20 @@
+<menu></menu>
+<article style="margin-top:150px">
+      <img class="listing-photo" [src]="housingLocation?.photo"
+        alt="Exterior photo of {{housingLocation?.name}}" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+          data-aos-once="true"/>
+      <section class="listing-description" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+        data-aos-once="true">
+        <h2 class="listing-heading">{{housingLocation?.name}}</h2>
+        <p class="listing-location">{{housingLocation?.frontend}}, {{housingLocation?.backend}}</p>
+      </section>
+      <section class="listing-features" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+        data-aos-once="true">
+        <h2 class="section-heading">Project</h2>
+        <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+          <a href="{{housingLocation?.link}}" class="mx-auto seeMoreProjects  btn btn-outline-secondary mt-3 justify-content-center">
+            View The Project
+          </a>
+        </div>
+      </section>
+</article>

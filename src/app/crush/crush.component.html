@@ -1,0 +1,590 @@
+<!--nav for both mobile and desktop-->
+<menu></menu>
+
+
+
+
+
+
+<div class="header container-fluid">
+
+  <div class=" text-white  h-150  welcome">
+    <span class="display-6 typewriting1">Welcome To InfoTechCrush </span>
+
+    <!--<span class="display-6" style="color:red">InfoTechCrush</span>-->
+
+    <p class="typewriting2" id="typedtext"></p>
+
+    <button (click)="scrollToSection('about')" class="btn btn-outline-secondary aboutUs">
+      Services rendered
+    </button>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+<section class="container-fluid  servicesDescription">
+
+  <span id="about" #about></span>
+
+  <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+    data-aos-once="true">
+
+
+    <div class="shadow-lg p-4 col-sm-5 mt-3">
+      <h2>The Services We Render</h2>
+
+      <p>
+        We Are ICT and Digital Services Company.
+        Our areas of operations revolve around the following services:
+      </p>
+
+
+      <ol class="ourServices">
+        <li href="#">Websites Development</li>
+        <li href="#">Application Development</li>
+        <li href="#">Digital marketing</li>
+        <li href="#">Search Engine Optimization</li>
+      </ol>
+
+
+      <p><button (click)="scrollToSection('otherServices')" type="button"
+          class="btn btn-outline-secondary readMoreServices">
+          More services
+        </button>
+      </p>
+    </div>
+
+    <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+      data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+      <h2>Custom Design</h2>
+      <p><img src="/assets/images/folder3.png" alt="computer" width="60" height="60"
+          style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+      <p>
+        We build websites that do not look exactly the same as thousands of others.
+        The websites we build are as a result from building from sratch in order for your
+        websites to adapt to your specific requirements.
+      </p>
+
+    </div>
+
+    <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+      data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+      <h2>Mobile Responsive</h2>
+      <p><img src="/assets/images/responsive2.png" alt="computer" width="60" height="60"
+          style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+      <p>
+        We ensure the websites we build are according to AMP - Accelerated Mobile Pages,
+        so that your websites can generate traffic from 65% of mobile internet users.
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <div class="row availability" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+    data-aos-once="true">
+
+    <div class="p-4 col-sm-5 mt-3">
+
+
+
+
+    </div>
+
+    <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3">
+
+      <h2>24/7 Availalbility</h2>
+      <p><img src="/assets/images/time3.png" alt="computer" width="60" height="60"
+          style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+      <p>
+        We have dedicated support team, who make sure your websites are up, running,
+        and functional so that your customers can find you 24/7.
+      </p>
+
+
+    </div>
+
+    <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3" data-aos="zoom-in" data-aos-duration="1500"
+      data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+      <h2>Easy to Edit</h2>
+      <p><img src="/assets/images/paper.png" alt="computer" width="60" height="60"
+          style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+      <p>
+        You have full control of every aspect, element of your website and you can easily migrate to any
+        platform if there is need to do so.
+        We build dynamic websites that can be easily be crafted so that new features and elements will be added
+        in order to meet your immediate and current specific needs.
+        Your website will be absolutely scalable.
+      </p>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="container-fluid mt-4 projectsOffer">
+
+  <span id="portfolio"></span>
+
+  <div class="col-12 projectContainer bg-warning p-4">
+    <h1 class="mx-auto projects">Our Projects</h1>
+
+    <h4 class="p-1">
+      We communicate and understand the business objectives of our clients with focus of
+      delivery scalable and secured applications.
+    </h4>
+
+
+
+    <div class="row">
+
+      <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width:350px;"  data-aos="zoom-in"
+        data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2 class="Headingproject">Company Portfolio Website</h2>
+        <p class="p-1">
+          A company portfolio website is developed to showcase a company's strengths,
+          expertise, and capabilities, and to provide potential clients
+          with the information they need to make an informed decision
+          about working with the company.
+        </p>
+        <img src="/assets/images/companyPortfolio.png" alt="company portfolio" width="300px" height="430px" class="imagePortfolio">
+        <a routerLink="/home" class="btn btn-success mt-3 justify-content-center" target="_blank">
+          Learn More</a>
+      </div>
+
+
+
+      <div class="col-sm bg-secondary m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+        data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+        <h2 class="Headingproject">Personal Portfolio Website</h2>
+        <p class="p-1">
+          A personal portfolio website is developed to showcase an individual's skills,
+          work experience, and achievements in a visually
+          appealing and professional manner.
+          The website serves as a digital resume or a platform
+          to promote oneself to potential employers or clients
+        </p>
+        <img src="/assets/images/portfolio.png" alt="personal portfolio" width="300px" height="430px" class="imagePortfolio">
+        <a href="https://jelil-info.infotechcrush.com/" class="btn btn-success mt-3 justify-content-center"
+          target="_blank">
+          Learn More</a>
+      </div>
+
+      <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+        data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+        <h2 class="Headingproject">eCommerce Website</h2>
+        <p class="p-1">
+          An online marketplace application is developed to have seller accounts,
+          product search and suggestions, shopping cart, order management,
+          payment processing, and real time chat for live auction.
+        </p>
+        <img src="/assets/images/onlineMarket.png" alt="eCommerce" width="300px" height="430px" class="imagePortfolio">
+        <a href="https://suok.infotechcrush.com/" class="btn btn-success mt-3 justify-content-center"
+          target="_blank">
+          Learn More</a>
+      </div>
+
+
+
+
+
+    </div>
+
+
+      <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <a routerLink="/portfolio" class="mx-auto seeMoreProjects  btn btn-outline-secondary mt-3 justify-content-center">
+          View More Projects
+        </a>
+      </div>
+
+
+  </div>
+
+
+
+</section>
+
+
+
+<section class="container-fluid row otherServicesRender">
+
+  <div class="container-fluid mx-auto text-center p-3 mt-4">
+    <span id="otherServices" #otherServices></span>
+    <h3>Other Services We Render</h3>
+  </div>
+
+  <div class=" carousel col-sm-5 p-3" style="float:right; clear:right">
+
+    <div class="container-fluid mt-3">
+      <h3>InfoTechCrush News</h3>
+      <p> Technology</p>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="flip-right"
+      data-aos-duration="3000" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="3000">
+
+          <a href="https://www.reuters.com/legal/alamedas-ex-ceo-tells-judge-she-hid-billions-loans-ftx-execs-2022-12-23/"
+            target="_blank">
+            <img src="assets/images/ftx.webp" alt="alamedas-ex-ceo" class="d-block" style="width:100%">
+          </a>
+
+          <div class="carousel-caption">
+            <h5>FTX</h5>
+            <p>
+              <a href="https://www.reuters.com/legal/alamedas-ex-ceo-tells-judge-she-hid-billions-loans-ftx-execs-2022-12-23/"
+                target="_blank">
+                Bankman-Fried, FTX execs received billions in hidden loans, ex-Alameda CEO says
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+
+          <a href="https://www.reuters.com/technology/twitter-restores-suicide-prevention-feature-after-reuters-report-2022-12-24/"
+            target="_blank">
+            <img src="assets/images/twitter.webp" alt="twitter" class="d-block" style="width:100%">
+          </a>
+
+          <div class="carousel-caption">
+            <h5>Twitter</h5>
+            <p>
+              <a href="https://www.reuters.com/technology/twitter-restores-suicide-prevention-feature-after-reuters-report-2022-12-24/"
+                target="_blank">
+                Twitter restores suicide prevention feature after Reuters report
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+
+          <a href="https://www.reuters.com/world/asia-pacific/north-koreas-weapons-programme-defies-covid-outbreak-reaches-uncharted-territory-2022-12-27/"
+            target="_blank">
+            <img src="assets/images/korea.jpg" alt="North korea" class="d-block" style="width:100%">
+          </a>
+
+          <div class="carousel-caption">
+            <h5>North Korea</h5>
+            <p>
+              <a href="https://www.reuters.com/world/asia-pacific/north-koreas-weapons-programme-defies-covid-outbreak-reaches-uncharted-territory-2022-12-27/"
+                target="_blank">
+                North Korea's weapons programme defies COVID outbreak, reaches 'uncharted territory'
+              </a>
+            </p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <div class=" col-sm-3 mt-3 p-3 two" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+    data-aos-once="true">
+    <h2>Digital Marketing</h2>
+    <p class="  p-1">
+      With a deep understanding of the latest digital marketing trends and tools,
+      We can help businesses generate organic traffic to their websites through
+      a data-driven approach that focuses on creating valuable content,
+      building quality backlinks,
+      and optimizing website structure and usability.
+    </p>
+  </div>
+
+  <div class=" col-sm-3 mt-3 p-3 two" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+    data-aos-once="true">
+    <h2>SEO</h2>
+    <p class="  p-1">
+      We have a deep understanding of the principles
+      and best practices of search engine optimization,
+      including on-page optimization, link building,
+      keyword research, and analytics. We use various SEO tools
+      and techniques to help websites rank higher in
+      search engine results pages (SERPs) and
+      attract more organic traffic.
+      We also stay up-to-date with the latest trends
+      and changes in search engine algorithms and adjust your strategies accordingly.
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="row besidecarousel2">
+
+    <div class=" col-sm-5 p-3"></div>
+
+    <div class="col-sm-3 p-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+      <h2>Email Designing</h2>
+      <p class="  p-1">
+        With our expertise in developing responsive design,
+        we can craft email templates that look great on any device
+        and inspire action from subscribers.
+        We specialize in creating visually stunning
+        and
+        highly engaging email campaigns that captivate audiences and drive results.
+      </p>
+    </div>
+
+    <div class=" col-sm-3 p-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+      <h2>Multi-Language websites</h2>
+      <p class="  p-1">
+        Expand your reach and make contact with wider audience with our multiple language solutions
+        that open your business proposition to new customer segments,
+        and which will help you improve sales and profits.
+        In contrast to translation machine tools,
+        which typically struggle to capture cultural nuances and context necessary for effective communication,
+        we ensure the translation sounds natural and fluent to a first language speaker.<br />
+        <span href="" class="typewrite" data-period="2000"
+          data-type='[ "نترجم", "النص الإنجليزي ", "إلى", "اللغة العربية" ]' style="color:#009999; ">
+          <span class="wrap"></span>
+        </span>
+      </p>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+<!-- Go to The Top Button -->
+
+<button onclick="topFunction()" class="float" id="goToTheTopButton" title="Go to top">
+
+  <i class="arrow2 up"></i><span style="font-size: 13px;">TOP</span>
+
+</button>
+
+
+<a class="whatsapp" id="whatsappLink" [href]="getWhatsAppLink()" target="_blank">
+  <img src="assets/images/whatsapp.png" alt="whatsapp" width="100%" height="auto">
+</a>
+
+
+
+<!--<div class="container-fluid mx-auto text-center p-3 mt-4">
+<span id="otherServices"></span>
+<h3>Other Services We Render</h3>
+</div>-->
+
+
+
+
+<form  method="POST" [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="myForm" autocomplete="on" class="container-fluid mt-3"
+   ng-app="myApp" ng-controller="validateCtrl" name="myForm" data-aos="zoom-in-right" data-aos-duration="1500"
+  data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+  <span id="contact"></span>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class=" col-md-6 col-lg-6 col-xl-4 text-white p-5 bg-dark" >
+
+        <p>Contact Us</p>
+        <p>To discuss web design, development or other services
+          we offer, please complete this form.
+        </p>
+        <p>
+          We need to store your personal details in our database so we can respond to you.
+
+        </p>
+        <p>Give us a call on <a style="color:#009999">+2347030786761</a></p>
+        <p>Email: <a style="color:#009999">support&#64;infotechcrush.com</a></p>
+
+
+      </div>
+
+      <div class=" col-md-6 col-lg-6 col-xl-8 bg-dark text-white">
+
+
+
+        <div class="row" style="margin-top: 50px; margin-left: 2px; width: 100%;">
+
+          <input class="col-sm form-control me-1" type="text" id="name" placeholder="Your name" formControlName="name"
+             ng-model="user" required>
+
+
+
+
+          <input class="col-sm form-control formsSeparator" type="email" id="email" placeholder="Your e-mail"
+            formControlName="email" ng-model="email" required>
+
+
+
+
+
+        </div>
+
+        <input class="col-sm form-control me-1" type="text" placeholder="Subject" formControlName="subject"
+          style="margin-top: 25px; width: 100%;">
+
+
+        <div class="col-sm">
+
+          <div>
+
+            <textarea class="form-control" rows="5" id="comment" placeholder="message" formControlName="message"
+              style="margin-top: 25px;"></textarea>
+
+          </div>
+
+          <!--<div class="attachment-wrapper">
+      <label for="attachment">Attachment</label>
+      <input id="attachment" name="attachment" type="file" required/>
+    </div>-->
+
+          <!--<div class="g-recaptcha" style="margin-top: 20px" data-sitekey="6LeIgrIpAAAAAMJtmfUb24MCmJr9EnJ5QYoGx1MM">
+          </div>
+
+          <div style="color:yellow; margin-top: 0" id="recaptchaerr"></div>-->
+          <div class="recaptcha" style="margin-top:20px">
+          <re-captcha  (resolved)="resolved($event)"
+              formControlName="recaptchaReactive"
+              siteKey="6LfSZpYpAAAAAFzcKjGB4XzNRmK9xYs-tDsK6neE">
+          </re-captcha>
+         </div>
+
+          <button type="submit" [disabled]="isSubmitting" #submitButton class="btn submitButton" id="clickToDisable1"
+           style="margin-top: 25px; margin-bottom: 25px;" name="myButton">
+            Submit
+          </button>
+          <div *ngIf="isSubmitting">Loading...</div>
+          <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+          <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+
+          <!--<button type="submit" class="btn submitButton"  id="clickToDisable1"
+         style="margin-top: 25px; margin-bottom: 25px;"
+         ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+         onclick="disbleOnclick()">
+         Submit
+        </button>-->
+
+        </div>
+        <!--<div><p id="clickToDisable" style="display: none;">sent, Thank You</p></div>-->
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="m p-4 text-white text-center footerAll">
+
+
+
+
+    <!--Footer -->
+
+
+<div class="footerLarge footerSection" id="aaa">
+
+      <div>Our profiles in social media:</div>
+      <a href="https://github.com/jelil-info" target="_self"><i class="fa fa-github footerOpacity"></i></a>
+      <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i
+          class="fa fa-linkedin footerOpacity"></i></a>
+      <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i
+          class="fa fa-facebook-official footerOpacity"></i></a>
+      <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="fa fa-instagram footerOpacity"></i></a>
+      <a href="https://www.twitter.com"><i class="fa fa-twitter footerOpacity" target="_self"></i></a>
+
+     </div>
+
+    <p><!--&copy; Copyright 2023 <br/>-->
+      <!--<span>Built by</span>-->
+      <a class="footerLast" href="https://infotechcrush.com/" title="jelil-info" target="_self">
+        © 2024 InfoTechCrush Ltd, all rights reserved.
+      </a>
+    </p>
+
+</div>
+
+    <!--<p id="width"></p>-->
+
+
+
+
+
+</form>

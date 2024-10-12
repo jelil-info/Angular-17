@@ -1,0 +1,153 @@
+<menu></menu>
+
+<!-- Go to The Top Button -->
+
+<button onclick="topFunction()" class="float" id="goToTheTopButton" title="Go to top">
+
+  <i class="arrow2 up"></i><span style="font-size: 13px;">TOP</span>
+
+</button>
+
+
+
+
+
+<form method="POST" [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="myForm" autocomplete="on" class="container-fluid"
+   ng-app="myApp" ng-controller="validateCtrl" name="myForm" style="margin-top:100px">
+
+  <span id="contact"></span>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-4 text-white p-5 bg-dark" >
+
+        <p>Contact Us</p>
+        <p>To discuss web design, development or other services
+          we offer, please complete this form.
+        </p>
+        <p>
+          We need to store your personal details in our database so we can respond to you.
+
+        </p>
+        <p>Give us a call on <a style="color:#009999">+2347030786761</a>.</p>
+        <p>Email: <a style="color:#009999">jelilinfotechcrush.com</a></p>
+
+
+      </div>
+
+      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-8 bg-dark text-white">
+
+
+
+        <div class="row" style="margin-top: 50px; margin-left: 2px; width: 100%;">
+
+          <input class="col-sm form-control me-1" type="text" id="name" placeholder="Your name" formControlName="name"
+             ng-model="user" required>
+
+
+
+
+          <input class="col-sm form-control formsSeparator" type="email" id="email" placeholder="Your e-mail"
+            formControlName="email" ng-model="email" required>
+
+
+
+
+
+        </div>
+
+        <input class="col-sm form-control me-1" type="text" placeholder="Subject" formControlName="subject"
+          style="margin-top: 25px; width: 100%;">
+
+
+        <div class="col-sm">
+
+          <div>
+
+            <textarea class="form-control" rows="5" id="comment" placeholder="message" formControlName="message"
+              style="margin-top: 25px;"></textarea>
+
+          </div>
+
+          <!--<div class="attachment-wrapper">
+      <label for="attachment">Attachment</label>
+      <input id="attachment" name="attachment" type="file" required/>
+    </div>-->
+
+          <!--<div class="g-recaptcha" style="margin-top: 20px" data-sitekey="6LeIgrIpAAAAAMJtmfUb24MCmJr9EnJ5QYoGx1MM">
+          </div>
+
+          <div style="color:yellow; margin-top: 0" id="recaptchaerr"></div>-->
+          <div class="recaptcha" style="margin-top:20px">
+          <re-captcha  (resolved)="resolved($event)"
+
+              siteKey="6LfSZpYpAAAAAFzcKjGB4XzNRmK9xYs-tDsK6neE">
+          </re-captcha>
+         </div>
+
+          <button type="submit" [disabled]="isSubmitting" #submitButton class="btn submitButton" id="clickToDisable1"
+           style="margin-top: 25px; margin-bottom: 25px;" name="myButton">
+            Submit
+          </button>
+          <div *ngIf="isSubmitting">Loading...</div>
+          <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+          <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+
+          <!--<button type="submit" class="btn submitButton"  id="clickToDisable1"
+         style="margin-top: 25px; margin-bottom: 25px;"
+         ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+         onclick="disbleOnclick()">
+         Submit
+        </button>-->
+
+        </div>
+        <!--<div><p id="clickToDisable" style="display: none;">sent, Thank You</p></div>-->
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="m p-4 text-white text-center footerAll">
+
+
+
+
+    <!--Footer -->
+
+
+<div class="footerLarge footerSection" id="aaa">
+
+      <div>Our profiles in socia media:</div>
+      <a href="https://github.com/jelil-info" target="_self"><i class="fa fa-github footerOpacity"></i></a>
+      <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i
+          class="fa fa-linkedin footerOpacity"></i></a>
+      <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i
+          class="fa fa-facebook-official footerOpacity"></i></a>
+      <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="fa fa-instagram footerOpacity"></i></a>
+      <a href="https://www.twitter.com"><i class="fa fa-twitter footerOpacity" target="_self"></i></a>
+
+     </div>
+
+    <p><!--&copy; Copyright 2023 <br/>-->
+      <!--<span>Built by</span>-->
+      <a class="footerLast" href="https://infotechcrush.com/" title="jelil-info" target="_self">
+        © 2024 InfoTechCrush Ltd, all rights reserved.
+      </a>
+    </p>
+
+</div>
+
+    <!--<p id="width"></p>-->
+
+
+
+
+
+</form>
+
+
+
+
+<router-outlet></router-outlet>

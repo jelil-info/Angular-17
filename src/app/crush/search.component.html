@@ -1,0 +1,16 @@
+<menu></menu>
+    <section style="margin-top:130px">
+      <form class="search" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+        data-aos-once="true">
+        <input type="text" placeholder="Javascript, React, Vuejs, Angular..." #filter>
+        <button type="button" (click)="filterResults(filter.value)"><i class="fa fa-search"></i></button>
+      </form>
+    </section>
+    <section class="results">
+      <app-housing-location
+        *ngFor="let housingLocation of filteredLocationList"
+        [housingLocation]="housingLocation" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+          data-aos-once="true">
+      </app-housing-location>
+      <div *ngIf="errorMessage" style="color:red;">{{ errorMessage }}</div>
+    </section>

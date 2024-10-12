@@ -1,0 +1,223 @@
+<!--nav for both mobile and desktop-->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar1">
+
+  <div class="container-fluid">
+
+
+
+    <a class="navbar-brand" routerLink="/home">
+
+
+      <!--<img src="jelil.jpg" alt="Logo" style="width:40px;" class="rounded-pill">-->
+      <p class="logo" id="logo" style="color:white" target="_self">InfoTechCrush</p>
+
+    </a>
+
+
+
+
+
+
+    <div class="clearfix" style="color:white;">
+
+      <span id="lblGreetings" class="float-start"></span>
+
+
+      <span style="font-size: 20px;margin-left:12px" class="fa fa-search float-start" routerLink="/search" routerLinkActive="active-linkSearch" target="_self">
+      </span>
+
+
+      <!--<span onclick="darkMode()">dark</span>-->
+    </div>
+
+
+
+
+    <!--Mobile Menu Background Color-->
+
+    <div class="offcanvas offcanvas-start sideMobileMenu" id="sideBar">
+
+      <div class="offcanvas-header mobileMenuAdjust">
+
+
+        <h1 class="offcanvas-title" id="mobileMenuHeading"></h1>
+
+        <!--cancel button-->
+        <div id="mobileMenuButton1">
+          <p class="closebtn" type="button" style="display: hidden;" data-bs-dismiss="offcanvas"> &times;
+          </p>
+        </div>
+
+
+
+        <!--Mobile Menu-->
+
+        <div class="" id="mobileMenu">
+
+
+
+          <ul class="offcanvas-body mobileNav">
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]= {extra:true} target="_self">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about" routerLinkActive="active-link" target="_self">About</a>
+            </li>
+
+            <!--<li class="nav-item dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-menu" href="#">Services</a>
+          </li>-->
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/portfolio" routerLinkActive="active-link" target="_self">Portfolio</a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link ContactMobile" routerLink="/contact" routerLinkActive="active-link" target="_self">Contact</a>
+            </li>
+
+
+            <!--<li class="nav-item">
+              <a class="nav-link ContactMobile" routerLink="/store" routerLinkActive="active-link" target="_self">Pricing</a>
+            </li>-->
+
+
+
+
+
+
+            <div class="r">
+              <li class="tooltip2">
+
+                <label class="label" for="touch"><span class="plusSign">Services</span></label>
+                <input type="checkbox" id="touch">
+
+                <ul class="plusSignMenu">
+
+                  <li><a routerLink="/home" target="_self">Other Services</a></li>
+                  <li><a>Websites Development</a></li>
+                  <li><a>Application Development</a></li>
+                  <li><a>Digital marketing</a></li>
+                  <li><a>Search Engine Optimization</a></li>
+
+                </ul>
+                <!--<span class="tooltiptext">Tooltip text</span>-->
+              </li>
+            </div>
+
+
+          </ul>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!--Desktop Menu-->
+
+      <ul class="collapse navbar-collapse justify-content-end desktopNav">
+
+
+
+
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]= {extra:true} target="_self">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active-link" target="_self">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/portfolio" routerLinkActive="active-link" target="_self">Portfolio</a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/contact" routerLinkActive="active-link" target="_self">Contact</a>
+        </li>
+
+        <!--<li class="nav-item">
+          <a class="nav-link ContactMobile" routerLink="/store" routerLinkActive="active-link"  target="_self">Pricing</a>
+        </li>-->
+
+
+
+        <li class="nav-item dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Services<i class="arrow1 down1"></i></a>
+          <div class="dropdown-content">
+            <a class="nav-link list-group-item" routerLink="/home" target="_self">Other Services</a>
+            <a class="nav-link list-group-item">Websites Development</a>
+            <a class="nav-link list-group-item">Application Development</a>
+            <a class="nav-link list-group-item">Digital marketing</a>
+            <a class="nav-link list-group-item">Search Engine Optimization</a>
+          </div>
+        </li>
+
+
+
+
+
+
+        <!--<li class="nav-item">
+
+
+          <a href="https://github.com/jelil-info" target="_self"><i class="nav-link fa fa-github footerOpacity"></i></a>
+          <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i class="nav-link fa fa-linkedin footerOpacity"></i></a>
+          <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="nav-link fa fa-facebook-official footerOpacity"></i></a>
+          <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="nav-link fa fa-instagram footerOpacity"></i></a>
+          <a href="https://www.twitter.com"><i class="nav-link fa fa-twitter footerOpacity" target="_self"></i></a>
+
+        </li>-->
+
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--mobile menu button-->
+
+    <div class="sideButton">
+      <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+        <div class="barsContainer" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+    </div>
+
+
+
+  </div>
+
+</nav>
+
+<router-outlet></router-outlet>
