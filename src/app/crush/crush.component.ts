@@ -10,6 +10,7 @@ import {Inject } from '@angular/core';
 import { HousingLocation } from './housinglocation';
 import { HousingService } from './housing.service';
 
+
 //import * as type from '../scripts/type';
 //import  './../../../assets/javascript.js'
 

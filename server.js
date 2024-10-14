@@ -91,8 +91,7 @@ app.use(formRouter);
 app.use(auth);
 app.use("/api", router);
 app.use(history());
-app.use("/", express.static("./dist/InfoTechCrush"));
-
+app.use("/", express.static("./dist/SportsStore"));
 
 app.listen(port, () => {
   console.log("Server is running...");

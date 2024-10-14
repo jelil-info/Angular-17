@@ -34,6 +34,8 @@ import { GoogleMapComponent } from "./crush/google-map.component";
 import { HousingLocationComponent } from './crush/housing-location.component';
 import { DetailsComponent } from './crush/details.component';
 import { SearchComponent } from './crush/search.component';
+import { Component, OnInit, isDevMode } from '@angular/core';
+
 
 
 
@@ -106,4 +108,13 @@ import { SearchComponent } from './crush/search.component';
                        HousingLocationComponent,GoogleMapComponent,DetailsComponent,SearchComponent],
         bootstrap: [AppComponent]
     })
-    export class AppModule { }
+    export class AppModule {
+      ngOnInit() {
+     if (isDevMode()) {
+       console.log('Development!');
+     } else {
+       console.log('Production!');
+     }
+     }
+
+    }
