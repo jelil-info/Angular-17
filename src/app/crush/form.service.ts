@@ -10,7 +10,7 @@ export class FormService {
 
 
 
-  private apiUrl = 'https://a.infotechcrush.com/submit';
+  private apiUrl = 'https://infotechcrush.com/submit';
 
   constructor(private http: HttpClient) { }
 
